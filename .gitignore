@@ -1,0 +1,4 @@
+# Virtual env
+.venv/
+venv/
+venv311/
