@@ -1,0 +1,52 @@
+//静止コマンド　うごきの あとに かならず いれる
+    time.sleep(3)
+
+
+//離陸コマンド　　ドローンが とびあがる
+    tello.Send("takeoff")
+    time.sleep(3)
+
+
+//着陸コマンド　　とんでいるドローンが ゆかに おりる
+    tello.Send("land")
+    time.sleep(3)
+
+
+//直進コマンド　　とんでいるドローンが まっすぐ すすむ
+    tello.Send("forward 20")
+    time.sleep(3)
+
+
+//水平移動コマンド（左）　　とんでいるドローンが ひだり にすすむ
+    tello.Send("left 20")
+    time.sleep(3)
+
+
+//水平移動コマンド（右）　　とんでいるドローンが みぎ にすすむ
+    tello.Send("right 20")
+    time.sleep(3)
+
+
+//後退コマンド　　とんでいるドローンが うしろ にすすむ
+    tello.Send("back 20")
+    time.sleep(3)
+
+
+//上昇コマンド　　とんでいるドローンが うえに あがる
+    tello.Send("up 60")
+    time.sleep(3)
+
+
+//下降コマンド　　とんでいるドローンが したに さがる
+    tello.Send("down 60")
+    time.sleep(3)
+
+
+//旋回コマンド（左）　　とんでいるドローンが ひだり にまわる
+    tello.Send("ccw 360")
+    time.sleep(3)
+
+
+//旋回コマンド（右）　　とんでいるドローンが みぎ にまわる
+    tello.Send("cw 360")
+    time.sleep(3)
